@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 155px 1fr;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo {
+    background: url("./assets/images/svg/logo.svg") no-repeat;
+    width: 150px;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+}
+
+a {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #616462;
+}
+
+a:hover {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #6CB48F;
+}
+
+.title {
+    margin: 80px 0px 0px 20px;
+    padding: 0px;
+}
+
+h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 36px;
+
+    margin: 0px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: #4E7D5E;
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 90px;
+    line-height: 80px;
+
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: #000000;
+
+}
+
+.island {
+    position: absolute;
+    width: 600px;
+    right: 10px;
+    top: 15px;
+    z-index: -1;
+}
+
+.description {
+    margin: 10px 0px 0px 22px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    color: #707581;
+}
