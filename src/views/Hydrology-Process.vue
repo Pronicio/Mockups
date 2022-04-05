@@ -14,6 +14,10 @@ function clickOnMe() {
   window.open("https://pronicio.dev")
 }
 
+function nextDesign() {
+  window.open("https://mockups.pronicio.dev/NFT-01")
+}
+
 </script>
 
 <template>
@@ -44,7 +48,7 @@ function clickOnMe() {
 
       <p class="description">Understanding the Hydrological Cycle: <br> Types and Processes Occurrence</p>
 
-      <div class="next">
+      <div class="next" @click="nextDesign">
         <a class="btn">GO</a>
         <p>Go to the next design</p>
         <a class="lets-go"></a>
