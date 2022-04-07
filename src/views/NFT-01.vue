@@ -55,8 +55,59 @@
       </div>
       <div class="creators">
         <h3>Meet Our Creators</h3>
+        <p>We believe artists need to be compensated<br> for every sale,not just the first one!</p>
+        <div class="pictures">
+          <img src="../assets/NFT-01/images/creators/1.png" alt="">
+          <img src="../assets/NFT-01/images/creators/2.png" alt="">
+          <img src="../assets/NFT-01/images/creators/3.png" alt="">
+          <img src="../assets/NFT-01/images/creators/4.png" alt="">
+          <img src="../assets/NFT-01/images/creators/5.png" alt="">
+          <img src="../assets/NFT-01/images/creators/6.png" alt="">
+          <img src="../assets/NFT-01/images/creators/7.png" alt="">
+          <img src="../assets/NFT-01/images/creators/8.png" alt="">
+          <img src="../assets/NFT-01/images/creators/9.png" alt="">
+          <img src="../assets/NFT-01/images/creators/10.png" alt="">
+        </div>
       </div>
     </main>
+
+    <footer>
+      <div class="footer-content">
+        <img src="../assets/NFT-01/images/svg/logo-footer.svg" alt="logo-footer"/>
+        <div class="site-map">
+          <h6>SITEMAP</h6>
+          <p>
+            Home<br>
+            Abouts<br>
+            Growers<br>
+            Merchants<br>
+            Contact<br>
+          </p>
+        </div>
+        <div class="socials">
+          <h6>SOCIALS</h6>
+          <p>
+            Facebook<br>
+            Linkedin<br>
+            Instagram<br>
+            Twitter<br>
+          </p>
+        </div>
+        <div class="head-office">
+          <h6>HEAD OFFICE</h6>
+          <p>Xilliams Corner Wine © 2017. 1112 A Market St<br> # Ste B22, Charlottesville, CA 45565</p>
+        </div>
+        <div class="news-letter">
+          <h6>NEWS LETTER</h6>
+          <p>TODO !</p>
+        </div>
+        <div class="footer-bottom">
+          <p>contact@lift.agency</p>
+          <p>(123) 456-7890</p>
+          <p>© 2020 Lift Media. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
