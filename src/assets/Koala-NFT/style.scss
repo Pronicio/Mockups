@@ -30,6 +30,10 @@ nav {
       }
     }
   }
+
+  @media (max-width: 525px) {
+    margin: 0.5rem 2rem;
+  }
 }
 
 main {
@@ -50,6 +54,10 @@ main {
       text-transform: uppercase;
       font-size: 4rem;
       margin: 0;
+
+      @media (max-width: 525px) {
+        font-size: 12vw;
+      }
     }
 
     p {
@@ -94,6 +102,13 @@ main {
     flex-direction: row;
     align-items: center;
 
+    img {
+
+      @media (max-width: 1210px) {
+       display: none;
+      }
+    }
+
     .links {
       display: flex;
       flex-direction: column;
@@ -125,7 +140,25 @@ main {
       #tiktok {
         background: url("@/assets/Koala-NFT/images/social-medias/tiktok.svg");
       }
+
+      @media (max-width: 730px) {
+        flex-direction: row;
+        margin: 0;
+
+        > div {
+          margin-left: 15px;
+        }
+      }
     }
+  }
+
+  @media (max-width: 730px) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  @media (max-width: 525px) {
+    margin: 0 2rem;
   }
 }
 
