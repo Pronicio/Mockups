@@ -45,7 +45,6 @@ export default {
   name: "Koala-NFT",
   mounted() {
     const text = document.querySelector(".text p")
-    console.log(text);
     text.innerHTML = text.innerText.split("").map((char, i) => {
       return `<span style="transform: rotate(${i * 9.2}deg)">${char}</span>`
     }).join("")
