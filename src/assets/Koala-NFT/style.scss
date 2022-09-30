@@ -87,12 +87,14 @@ main {
         border-radius: 50%;
       }
 
-      .text {
+      .btn-round {
         position: absolute;
-        width: 14rem;
-        height: 12rem;
-        animation: rotateText 10s linear infinite;
+        width: 138px;
+        height: 138px;
+        animation: spin 4s linear infinite;
         cursor: pointer;
+        background: url("@/assets/Koala-NFT/images/btn-round.png") no-repeat;
+        background-size: 138px;
       }
     }
   }
@@ -186,11 +188,9 @@ main {
   border-radius: 50%;
 }
 
-@keyframes rotateText {
-  0% {
-    transform: rotate(360deg);
-  }
+@keyframes spin {
   100% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(180deg);
+    transform:rotate(180deg);
   }
 }

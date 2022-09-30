@@ -22,8 +22,7 @@
         Their mission is to protect the world from evil.</p>
       <div class="circle">
         <div class="logo"></div>
-        <div class="text">
-          <p>Explore Artworks • Explore Artworks •</p>
+        <div class="btn-round">
         </div>
       </div>
     </div>
@@ -64,6 +63,11 @@ body {
   background: #060707;
   font-family: 'IBM Plex Mono', sans-serif;
   overflow: hidden;
+}
+
+::selection {
+  color: #082419;
+  background: #082419;
 }
 
 span {
