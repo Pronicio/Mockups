@@ -1,0 +1,170 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px 80px;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(26px);
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      margin-right: 10px;
+    }
+
+    p {
+      color: #FFFFFF;
+      margin: 0;
+    }
+  }
+
+  nav {
+
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
+      margin-right: 4rem;
+    }
+  }
+}
+
+.bg {
+  background: url("@/assets/Journey-Meta/images/bg.png") no-repeat;
+  background-size: 100vw;
+  height: 105vh;
+  width: 100%;
+
+  position: relative;
+  top: -6rem;
+  z-index: -1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  .action {
+    display: flex;
+    justify-content: center;
+  }
+
+  .arrows {
+    background: url("@/assets/Journey-Meta/images/arrows.svg") no-repeat;
+    height: 428px;
+    width: 36px;
+    align-self: center;
+    margin-top: 30px;
+  }
+
+  .takeoff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    left: 30%;
+    width: fit-content;
+
+    h2 {
+      color: #FFFFFF;
+      font-weight: 500;
+      width: fit-content;
+    }
+
+    p {
+      font-family: 'Epilogue', sans-serif;
+      font-weight: 300;
+      color: #FFFFFF;
+      max-width: 25rem;
+    }
+
+    .dialog {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 26rem;
+
+      button {
+        align-self: flex-start;
+        font-family: 'Epilogue', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        cursor: auto;
+        margin: 5px 0; /*TODO*/
+
+        &.me {
+          align-self: flex-end;
+        }
+      }
+    }
+
+    img {
+      border-radius: 8px;
+      position: relative;
+      bottom: 575px;
+      left: 350px;
+      z-index: -1;
+    }
+  }
+
+  .travel {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: #FFFFFF;
+      font-weight: 500;
+      width: fit-content;
+    }
+
+    .paragraph {
+      font-family: 'Epilogue', sans-serif;
+      font-weight: 300;
+      color: #FFFFFF;
+      max-width: 27rem;
+    }
+
+    .engines {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+
+      .engine {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          font-family: 'Epilogue', sans-serif;
+          font-weight: 400;
+          color: #FFFFFF;
+          max-width: 27rem;
+        }
+      }
+    }
+  }
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: 1.6px solid #FFFFFF;
+  border-radius: 48px;
+  padding: 8px 16px;
+  color: #FFFFFF;
+  font-size: 14px;
+
+  &.fill {
+    background: #FFFFFF;
+    color: #000000;
+  }
+}
