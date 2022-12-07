@@ -15,6 +15,10 @@ const routes = [
     {
         path: "/Koala-NFT",
         component: () => import('../pages/Koala-NFT.vue')
+    },
+    {
+        path: "/Travelopia",
+        component: () => import('../pages/Travelopia.vue')
     }
 ]
 
