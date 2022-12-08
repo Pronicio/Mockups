@@ -99,5 +99,6 @@ body {
   background: url("../assets/Travelopia/images/bg.png") no-repeat;
   background-size: cover;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 </style>
