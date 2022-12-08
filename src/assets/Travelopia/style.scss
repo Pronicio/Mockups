@@ -73,8 +73,7 @@ main {
 
   h1 {
     font-family: 'Romana BT', sans-serif;
-    font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 4.3rem;
     line-height: 105%;
 
@@ -84,13 +83,24 @@ main {
 
   p {
     font-family: 'Romana BT', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 150%;
     letter-spacing: 0.05em;
 
     color: #81949D;
+  }
+
+  h3 {
+    font-family: 'Romana BT', sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #81949D;
+    margin: 3rem 0 1.5rem 0;
   }
 
   .activities {
@@ -107,25 +117,45 @@ main {
       padding: 10px;
 
       img {
-        height: 205px;
+        height: 220px;
         width: 220px;
+        object-fit: cover;
       }
 
       h4 {
         font-family: 'Romana BT', sans-serif;
+        font-weight: 900;
         font-size: 18px;
         letter-spacing: 0.05em;
         margin: 8px 0;
         align-self: flex-start;
       }
 
-      p {
-        font-family: 'Romana BT', sans-serif;
-        font-size: 15.5px;
-
-        margin: 0;
-        color: #748476;
+      .peoples {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
         align-self: flex-start;
+
+        p {
+          font-family: 'Romana BT', sans-serif;
+          font-size: 15.5px;
+          margin: 0;
+          color: #748476;
+        }
+
+        .light {
+          color: #D1D1D1;
+        }
+
+        .ic-peoples {
+          background: url("@/assets/Travelopia/icons/users.svg") no-repeat;
+          background-size: 20px;
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+        }
       }
 
       .t1 { border-radius: 12px 80px 12px 50px; }
@@ -159,9 +189,71 @@ main {
         color: #06460D;
       }
     }
+  }
 
-    @media (max-width: 785px) {
-      /*flex-direction: column;*/
+  .boat {
+    background: url("@/assets/Travelopia/images/boat.png") no-repeat;
+    background-size: contain;
+
+    position: absolute;
+    width: 45rem;
+    height: 100vh;
+    top: 20%;
+    right: -31px;
+
+    @media (max-width: 1545px) {
+      /*display: none;*/
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  gap: 2rem;
+
+  .plate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    background: rgba(220, 233, 239, 0.5);
+    border-radius: 8px;
+    padding: 16px;
+
+    .icon {
+      grid-area: 1 / 1 / 3 / 2;
+
+      &.camp {
+        background: url("@/assets/Travelopia/icons/camp.svg") no-repeat;
+      }
+    }
+
+    h6 {
+      grid-area: 1 / 2 / 2 / 3;
+      color: #676B6A;
+      margin: 2px 0;
+
+      font-family: 'Romana BT', sans-serif;
+      font-weight: 900;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+
+    h5 {
+      grid-area: 2 / 2 / 3 / 3;
+      color: #083740;
+      mix-blend-mode: normal;
+      margin: 2px 0;
+
+      font-family: 'Romana BT', sans-serif;
+      font-weight: 900;
+      font-size: 1rem;
+      letter-spacing: 0.05em;
     }
   }
 }
