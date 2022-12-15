@@ -45,31 +45,51 @@
   <footer>
     <div class="plate">
       <div class="icon camp"></div>
-      <h6>Activity</h6>
-      <h5>Sky Diving</h5>
+      <div class="text">
+        <h6>Activity</h6>
+        <h5>Sky Diving</h5>
+      </div>
     </div>
     <div class="plate">
       <div class="icon location"></div>
-      <h6>Location</h6>
-      <h5>Dubai Marina</h5>
+      <div class="text">
+        <h6>Location</h6>
+        <h5>Dubai Marina</h5>
+      </div>
     </div>
     <div class="plate">
       <div class="icon calendar"></div>
-      <h6>Date</h6>
-      <h5>24.06.2023</h5>
+      <div class="text">
+        <h6>Date</h6>
+        <h5>24.06.2023</h5>
+      </div>
     </div>
     <div class="plate">
       <div class="icon user"></div>
-      <h6>Participant</h6>
-      <h5>4 adults</h5>
+      <div class="text">
+        <h6>Participant</h6>
+        <h5>4 adults</h5>
+      </div>
+    </div>
+    <div class="arrow">
+      <div class="icon"></div>
     </div>
   </footer>
+  <div class="balls">
+    <div class="ball b1"></div>
+    <div class="ball b2"></div>
+    <div class="ball b3"></div>
+    <div class="ball b4"></div>
+    <div class="ball b5"></div>
+  </div>
 </template>
 
-<script>
-export default {
-  name: "Travelopia"
-}
+<script setup>
+import { useHead } from '@vueuse/head'
+
+useHead({
+  title: 'Travelopia',
+})
 </script>
 
 <style scoped lang="scss">
@@ -96,7 +116,7 @@ export default {
 
 body {
   margin: 0;
-  background: url("../assets/Travelopia/images/bg.png") no-repeat;
+  background: url("../assets/Travelopia/images/bg.png") no-repeat #F6F8FA;
   background-size: cover;
   overflow-x: hidden;
   overflow-y: auto;
