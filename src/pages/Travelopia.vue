@@ -75,13 +75,6 @@
       <div class="icon"></div>
     </div>
   </footer>
-  <div class="balls">
-    <div class="ball b1"></div>
-    <div class="ball b2"></div>
-    <div class="ball b3"></div>
-    <div class="ball b4"></div>
-    <div class="ball b5"></div>
-  </div>
 </template>
 
 <script setup>

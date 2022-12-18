@@ -221,6 +221,7 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 
   width: fit-content;
 
@@ -302,42 +303,8 @@ footer {
       height: 27px;
     }
   }
-}
 
-.balls {
-
-  .ball {
-    width: 15rem;
-    height: 15rem;
-
-    position: absolute;
-    background: #CFE2E9;
-    filter: blur(100px);
-    opacity: 0.5;
-
-    &.b1 {
-      top: 25%;
-      right: 40%;
-    }
-
-    &.b2 {
-      top: 50%;
-      left: 5%;
-    }
-
-    &.b3 {
-      top: 70%;
-      right: 45%;
-    }
-
-    &.b4 {
-      top: 30%;
-      right: 10%;
-    }
-
-    &.b5 {
-      top: 0%;
-      left: 0%;
-    }
+  @media (max-width: 480px) {
+    gap: 4px;
   }
 }
