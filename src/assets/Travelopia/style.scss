@@ -1,0 +1,310 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 25px;
+  padding-bottom: 25px;
+
+  border-bottom: 1px dashed rgb(129 148 157 / 50%);
+
+  #logo {
+    font-family: 'Amalfi Coast', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 206%;
+    letter-spacing: 0.04em;
+
+    color: #0F3C4D;
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: #0F3D4C;
+      mix-blend-mode: normal;
+      font-family: 'Circular Std', sans-serif;
+      font-size: 18px;
+      margin-right: 3.5vw;
+    }
+
+    button {
+      font-family: 'Romana BT', sans-serif;
+      font-size: 18px;
+      letter-spacing: 0.05em;
+
+      background: #D9ED82;
+      border-radius: 12px;
+      border: none;
+
+      padding: 10px 25px;
+      color: #0F3D4C;
+      mix-blend-mode: normal;
+      cursor: pointer;
+    }
+
+    @media (max-width: 590px) {
+      display: none;
+    }
+  }
+}
+
+main {
+  padding: 0 25px;
+
+  h2 {
+    font-family: 'Romana BT', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #81949D;
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-family: 'Romana BT', sans-serif;
+    font-weight: 900;
+    font-size: 4.3rem;
+    line-height: 105%;
+
+    color: #0F3D4C;
+    margin: 0;
+  }
+
+  p {
+    font-family: 'Romana BT', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+
+    color: #81949D;
+  }
+
+  h3 {
+    font-family: 'Romana BT', sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #81949D;
+    margin: 3rem 0 1.5rem 0;
+  }
+
+  .activities {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 20px 20px 0;
+      padding: 10px;
+
+      img {
+        height: 220px;
+        width: 220px;
+        object-fit: cover;
+      }
+
+      h4 {
+        font-family: 'Romana BT', sans-serif;
+        font-weight: 900;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        margin: 8px 0;
+        align-self: flex-start;
+      }
+
+      .peoples {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        align-self: flex-start;
+
+        p {
+          font-family: 'Romana BT', sans-serif;
+          font-size: 15.5px;
+          margin: 0;
+          color: #748476;
+        }
+
+        .light {
+          color: #D1D1D1;
+        }
+
+        .ic-peoples {
+          background: url("@/assets/Travelopia/icons/users.svg") no-repeat;
+          background-size: 20px;
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+        }
+      }
+
+      .t1 { border-radius: 12px 80px 12px 50px; }
+      .t2 { border-radius: 12px 12px 80px 12px; }
+      .t3 { border-radius: 80px 12px;}
+    }
+
+    .c1 {
+      background: #D9ED82;
+      border-radius: 13.5px 80px 13.5px 0;
+
+      h4 {
+        color: #06460D;
+      }
+    }
+
+    .c2 {
+      background: #246E79;
+      border-radius: 13.5px 13.5px 80px 0;
+
+      h4 {
+        color: #FFFFFF;
+      }
+    }
+
+    .c3 {
+      background: #D9ED82;
+      border-radius: 80px 12px 0 12px;
+
+      h4 {
+        color: #06460D;
+      }
+    }
+  }
+
+  .boat {
+    background: url("@/assets/Travelopia/images/boat.png") no-repeat;
+    background-size: contain;
+
+    position: absolute;
+    width: 700px;
+    height: 833px;
+    top: 20%;
+    right: -31px;
+
+    @media (max-width: 1545px) {
+      width: 550px;
+      height: 650px;
+    }
+
+    @media (max-width: 1310px) {
+      width: 450px;
+      height: 525px;
+    }
+
+    @media (max-width: 1173px) {
+      display: none;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: fit-content;
+
+  background: rgba(248, 255, 249, 0.5);
+  box-shadow: 5px 6px 6px rgba(0, 0, 0, 0.02), 1px 1px 3px rgba(0, 0, 0, 0.01);
+  border-radius: 0 63px 0 0;
+
+  border: 2px solid #FFFFFF;
+  gap: 2rem;
+  padding: 10px 25px;
+
+  .plate {
+    display: flex;
+
+    background: rgba(220, 233, 239, 0.5);
+    border-radius: 8px;
+    padding: 16px;
+
+    .icon {
+      margin: 5px 10px 5px 5px;
+
+      &.camp {
+        background: url("@/assets/Travelopia/icons/camp.svg") no-repeat;
+        width: 24px;
+        height: 27px;
+      }
+
+      &.location {
+        background: url("@/assets/Travelopia/icons/location.svg") no-repeat;
+        width: 23px;
+        height: 28px;
+      }
+
+      &.calendar {
+        background: url("@/assets/Travelopia/icons/calendar.svg") no-repeat;
+        width: 28px;
+        height: 29px;
+      }
+
+      &.user {
+        background: url("@/assets/Travelopia/icons/user.svg") no-repeat;
+        width: 20px;
+        height: 26px;
+      }
+    }
+
+    h6 {
+      color: #676B6A;
+      margin: 2px 0;
+
+      font-family: 'Romana BT', sans-serif;
+      font-weight: 900;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+
+    h5 {
+      color: #083740;
+      mix-blend-mode: normal;
+      margin: 2px 0;
+
+      font-family: 'Romana BT', sans-serif;
+      font-weight: 900;
+      font-size: 1rem;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .arrow {
+    padding: 16px 22px;
+    background: #1B485A;
+    box-shadow: 0 6px 20px rgb(27 72 90 / 36%);
+    border-radius: 120px;
+    cursor: pointer;
+
+    .icon {
+      background: url("@/assets/Travelopia/icons/arrow.svg") no-repeat;
+      width: 58px;
+      height: 27px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    gap: 4px;
+  }
+}

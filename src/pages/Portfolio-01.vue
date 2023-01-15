@@ -110,6 +110,7 @@ useHead({
 <style>
 body {
   background: #2D2D2D;
+  overflow-y: auto;
 }
 
 ::-webkit-scrollbar {
