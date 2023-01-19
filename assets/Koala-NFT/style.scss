@@ -82,7 +82,7 @@ main {
         width: 150px;
         height: 150px;
 
-        background: url("@/assets/Koala-NFT/images/arrow-right.svg") no-repeat center;
+        background: url("/assets/Koala-NFT/images/arrow-right.svg") no-repeat center;
         background-size: 3rem;
         border-radius: 50%;
       }
@@ -93,7 +93,7 @@ main {
         height: 138px;
         animation: spin 4s linear infinite;
         cursor: pointer;
-        background: url("@/assets/Koala-NFT/images/btn-round.png") no-repeat;
+        background: url("/assets/Koala-NFT/images/btn-round.png") no-repeat;
         background-size: 138px;
       }
     }
@@ -124,23 +124,23 @@ main {
       }
 
       #twitter {
-        background: url("@/assets/Koala-NFT/images/social-medias/twitter.svg");
+        background: url("/assets/Koala-NFT/images/social-medias/twitter.svg");
       }
 
       #discord {
-        background: url("@/assets/Koala-NFT/images/social-medias/discord.svg");
+        background: url("/assets/Koala-NFT/images/social-medias/discord.svg");
       }
 
       #instagram {
-        background: url("@/assets/Koala-NFT/images/social-medias/instagram.svg");
+        background: url("/assets/Koala-NFT/images/social-medias/instagram.svg");
       }
 
       #facebook {
-        background: url("@/assets/Koala-NFT/images/social-medias/facebook.svg");
+        background: url("/assets/Koala-NFT/images/social-medias/facebook.svg");
       }
 
       #tiktok {
-        background: url("@/assets/Koala-NFT/images/social-medias/tiktok.svg");
+        background: url("/assets/Koala-NFT/images/social-medias/tiktok.svg");
       }
 
       @media (max-width: 730px) {

@@ -86,7 +86,7 @@ useHead({
 </script>
 
 <style scoped lang="scss">
-@import '../assets/Travelopia/style.scss';
+@import '@/assets/Travelopia/style.scss';
 </style>
 
 <style>
@@ -97,19 +97,19 @@ useHead({
   font-family: 'Romana BT';
   font-style: normal;
   font-weight: 700;
-  src: local('Romana BT'), url('../assets/Travelopia/font/RomanaBT.woff') format('woff');
+  src: local('Romana BT'), url('@/assets/Travelopia/font/RomanaBT.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Romana BT';
   font-style: normal;
   font-weight: 900;
-  src: local('Romana BT'), url('../assets/Travelopia/font/RomanaBoldBT.woff') format('woff');
+  src: local('Romana BT'), url('@/assets/Travelopia/font/RomanaBoldBT.woff') format('woff');
 }
 
 body {
   margin: 0;
-  background: url("../assets/Travelopia/images/bg.png") no-repeat #F6F8FA;
+  background: url("@/assets/Travelopia/images/bg.png") no-repeat #F6F8FA;
   background-size: cover;
   overflow-x: hidden;
   overflow-y: auto;

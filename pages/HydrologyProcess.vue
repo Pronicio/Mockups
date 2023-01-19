@@ -22,7 +22,7 @@
         <h1>Hydrology <br> Process</h1>
       </div>
 
-      <img class="island" src="../assets/HydrologyProcess/images/island.png" alt="island"/>
+      <img class="island" src="@/assets/HydrologyProcess/images/island.png" alt="island"/>
 
       <p class="description">Understanding the Hydrological Cycle: <br> Types and Processes Occurrence</p>
 
@@ -46,11 +46,12 @@ useHead({
 </script>
 
 <style scoped>
-@import '../assets/HydrologyProcess/style.css';
+@import '@/assets/HydrologyProcess/style.css';
 </style>
 
 <style>
 body {
+  background: none;
   overflow: hidden;
 }
 </style>

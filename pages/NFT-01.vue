@@ -119,7 +119,7 @@ useHead({
 </script>
 
 <style scoped>
-@import '../assets/NFT-01/style.css';
+@import '@/assets/NFT-01/style.css';
 </style>
 
 <style>

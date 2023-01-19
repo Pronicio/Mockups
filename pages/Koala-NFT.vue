@@ -41,18 +41,12 @@
 
 <script>
 export default {
-  name: "Koala-NFT",
-  mounted() {
-    const text = document.querySelector(".text p")
-    text.innerHTML = text.innerText.split("").map((char, i) => {
-      return `<span style="transform: rotate(${i * 9.2}deg)">${char}</span>`
-    }).join("")
-  }
+  name: "Koala-NFT"
 }
 </script>
 
 <style scoped lang="scss">
-@import '../assets/Koala-NFT/style.scss';
+@import '@/assets/Koala-NFT/style.scss';
 </style>
 
 <style>
