@@ -39,10 +39,12 @@
   </main>
 </template>
 
-<script>
-export default {
-  name: "Koala-NFT"
-}
+<script setup>
+import { useHead } from '@vueuse/head'
+
+useHead({
+  title: 'Koala-NFT',
+})
 </script>
 
 <style scoped lang="scss">
