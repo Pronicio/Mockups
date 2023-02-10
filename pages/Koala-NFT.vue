@@ -59,6 +59,7 @@ body {
   background: #060707;
   font-family: 'IBM Plex Mono', sans-serif;
   overflow: hidden;
+  margin: 0;
 }
 
 ::selection {
