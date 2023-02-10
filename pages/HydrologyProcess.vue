@@ -53,5 +53,6 @@ useHead({
 body {
   background: none;
   overflow: hidden;
+  margin: 0;
 }
 </style>
