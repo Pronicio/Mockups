@@ -39,20 +39,16 @@
   </main>
 </template>
 
-<script>
-export default {
-  name: "Koala-NFT",
-  mounted() {
-    const text = document.querySelector(".text p")
-    text.innerHTML = text.innerText.split("").map((char, i) => {
-      return `<span style="transform: rotate(${i * 9.2}deg)">${char}</span>`
-    }).join("")
-  }
-}
+<script setup>
+import { useHead } from '@vueuse/head'
+
+useHead({
+  title: 'Koala-NFT',
+})
 </script>
 
 <style scoped lang="scss">
-@import '../assets/Koala-NFT/style.scss';
+@import '@/assets/Koala-NFT/style.scss';
 </style>
 
 <style>
@@ -63,6 +59,7 @@ body {
   background: #060707;
   font-family: 'IBM Plex Mono', sans-serif;
   overflow: hidden;
+  margin: 0;
 }
 
 ::selection {

@@ -150,7 +150,7 @@ main {
         }
 
         .ic-peoples {
-          background: url("@/assets/Travelopia/icons/users.svg") no-repeat;
+          background: url("/assets/Travelopia/icons/users.svg") no-repeat;
           background-size: 20px;
           width: 20px;
           height: 20px;
@@ -192,7 +192,7 @@ main {
   }
 
   .boat {
-    background: url("@/assets/Travelopia/images/boat.png") no-repeat;
+    background: url("/assets/Travelopia/images/boat.png") no-repeat;
     background-size: contain;
 
     position: absolute;
@@ -244,25 +244,25 @@ footer {
       margin: 5px 10px 5px 5px;
 
       &.camp {
-        background: url("@/assets/Travelopia/icons/camp.svg") no-repeat;
+        background: url("/assets/Travelopia/icons/camp.svg") no-repeat;
         width: 24px;
         height: 27px;
       }
 
       &.location {
-        background: url("@/assets/Travelopia/icons/location.svg") no-repeat;
+        background: url("/assets/Travelopia/icons/location.svg") no-repeat;
         width: 23px;
         height: 28px;
       }
 
       &.calendar {
-        background: url("@/assets/Travelopia/icons/calendar.svg") no-repeat;
+        background: url("/assets/Travelopia/icons/calendar.svg") no-repeat;
         width: 28px;
         height: 29px;
       }
 
       &.user {
-        background: url("@/assets/Travelopia/icons/user.svg") no-repeat;
+        background: url("/assets/Travelopia/icons/user.svg") no-repeat;
         width: 20px;
         height: 26px;
       }
@@ -298,7 +298,7 @@ footer {
     cursor: pointer;
 
     .icon {
-      background: url("@/assets/Travelopia/icons/arrow.svg") no-repeat;
+      background: url("/assets/Travelopia/icons/arrow.svg") no-repeat;
       width: 58px;
       height: 27px;
     }

@@ -104,7 +104,7 @@ useHead({
 </script>
 
 <style scoped lang="scss">
-@import '../assets/Portfolio-01/style.scss';
+@import '@/assets/Portfolio-01/style.scss';
 </style>
 
 <style>

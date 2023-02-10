@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("./fonts/Poppins.woff2") format('woff2');
+    src: url("/assets/HydrologyProcess/fonts/Poppins.woff2") format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("./fonts/Bebas-Neue.woff2") format('woff2');
+  src: url("/assets/HydrologyProcess/fonts/Bebas-Neue.woff2") format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -25,7 +25,7 @@ section {
 }
 
 #circle {
-    background: url("./images/items/circle.svg");
+    background: url("/assets/HydrologyProcess/images/items/circle.svg");
     position: absolute;
     width: 48px;
     height: 48px;
@@ -37,7 +37,7 @@ section {
 }
 
 #rectangle {
-    background: url("./images/items/rectangle.svg");
+    background: url("/assets/HydrologyProcess/images/items/rectangle.svg");
     position: absolute;
     width: 32px;
     height: 39px;
@@ -48,7 +48,7 @@ section {
 }
 
 #triangle {
-    background: url("./images/items/triangle.svg");
+    background: url("/assets/HydrologyProcess/images/items/triangle.svg");
     position: absolute;
     width: 43px;
     height: 42px;
@@ -59,7 +59,7 @@ section {
 }
 
 #square {
-    background: url("./images/items/square.svg");
+    background: url("/assets/HydrologyProcess/images/items/square.svg");
     position: absolute;
     width: 48px;
     height: 48px;
@@ -77,7 +77,7 @@ nav {
 }
 
 .logo {
-    background: url("./images/svg/logo.svg") no-repeat;
+    background: url("/assets/HydrologyProcess/images/svg/logo.svg") no-repeat;
     width: 150px;
     height: 60px;
     margin: 0px;
@@ -206,14 +206,14 @@ h1 {
 }
 
 .lets-go {
-    background: url("./images/svg/lets-go.svg") no-repeat;
+    background: url("/assets/HydrologyProcess/images/svg/lets-go.svg") no-repeat;
     width: 82px;
     height: 31px;
     margin: 10px;
 }
 
 .me {
-    background: url("./images/svg/me.svg") no-repeat;
+    background: url("/assets/HydrologyProcess/images/svg/me.svg") no-repeat;
     cursor: pointer;
 
     position: absolute;

@@ -119,12 +119,13 @@ useHead({
 </script>
 
 <style scoped>
-@import '../assets/NFT-01/style.css';
+@import '@/assets/NFT-01/style.css';
 </style>
 
 <style>
 body {
   overflow-y: auto;
+  margin: 0;
 }
 
 ::-webkit-scrollbar {
