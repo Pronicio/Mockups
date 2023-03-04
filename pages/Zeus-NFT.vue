@@ -59,6 +59,33 @@
         </div>
       </div>
     </section>
+    <section id="services">
+      <h2>We Provide</h2>
+      <p>Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in elit.<br> Morbi
+        rhoncus, tellus, eros consequat magna semper orci a tincidunt. </p>
+      <div class="services">
+        <div class="service">
+          <img src="../assets/Zeus-NFT/images/services/home.svg" alt="Home Icon">
+          <h4>Host your NFTs</h4>
+          <p>Egestas tellus nunc proin amet tellus tincidunt lacus consequat. Ultrices</p>
+        </div>
+        <div class="service">
+          <img src="../assets/Zeus-NFT/images/services/stats.svg" alt="Stats Icon">
+          <h4>See your sales</h4>
+          <p>Integer ante non nunc, eget est justo vel semper nunc. Lacus</p>
+        </div>
+        <div class="service">
+          <img src="../assets/Zeus-NFT/images/services/lock.svg" alt="Lock Icon">
+          <h4>Secure wallet</h4>
+          <p>Sed faucibus faucibus egestas volutpat, accumsan adipiscing egestas est. Auctor et leo urna est.</p>
+        </div>
+        <div class="service">
+          <img src="../assets/Zeus-NFT/images/services/toilet-paper.svg" alt="Toilet paper Icon">
+          <h4>No scam</h4>
+          <p>Sed faucibus faucibus egestas volutpat, accumsan adipiscing egestas est. Auctor et leo urna est.</p>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 

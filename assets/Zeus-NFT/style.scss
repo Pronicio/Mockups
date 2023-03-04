@@ -262,4 +262,75 @@ main {
       }
     }
   }
+
+  #services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 4rem 0;
+
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 4rem;
+
+      text-align: center;
+      color: #000000;
+      margin: 0;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #532C59;
+    }
+
+    .services {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+
+      margin: 32px 0;
+
+      .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 300px;
+        margin-right: 4rem;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        h4 {
+          font-weight: 700;
+          font-size: 1.75rem;
+          line-height: 2.25rem;
+
+          text-align: center;
+          color: #000000;
+          margin: 5px;
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 1rem;
+          line-height: 1.25rem;
+
+          text-align: center;
+          color: #532C59;
+          margin: 0;
+        }
+      }
+    }
+  }
 }
