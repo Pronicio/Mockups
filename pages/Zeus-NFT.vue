@@ -129,6 +129,18 @@
         </div>
       </div>
     </section>
+    <section id="call-to-action">
+      <div class="objects">
+        <img src="../assets/Zeus-NFT/images/objects/object1.png" alt="Object 1" id="obj1">
+        <img src="../assets/Zeus-NFT/images/objects/object2.png" alt="Object 2" id="obj2">
+        <img src="../assets/Zeus-NFT/images/objects/object3.png" alt="Object 3" id="obj3">
+        <img src="../assets/Zeus-NFT/images/objects/object4.png" alt="Object 4" id="obj4">
+      </div>
+      <h2>Ready to sell your NFTs?</h2>
+      <p>Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in elit.<br> Morbi
+        rhoncus, tellus, eros consequat magna semper orci a tincidunt. </p>
+      <button>Sell right now</button>
+    </section>
   </main>
 </template>
 
