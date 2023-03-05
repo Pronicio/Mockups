@@ -101,6 +101,34 @@
         </div>
       </div>
     </section>
+    <section id="faq">
+      <div class="title">
+        <h2>Frequently<br> Asked Questions</h2>
+        <p>Risus commodo id odio turpis pharetra elementum.<br> Pulvinar porta porta feugiat scelerisque in elit.<br>
+          Morbi
+          rhoncus, tellus, eros consequat magna semper orci a tincidunt. </p>
+      </div>
+      <div class="faq">
+        <div class="column">
+          <div class="card" v-for="item in faq[0]" :key="item.question">
+            <div class="view">
+              <h4>{{ item.question }}</h4>
+              <div class="btn" @click="showAnswer"></div>
+            </div>
+            <p>{{ item.answer }}</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card" v-for="item in faq[1]" :key="item.question">
+            <div class="view">
+              <h4>{{ item.question }}</h4>
+              <div class="btn" @click="showAnswer"></div>
+            </div>
+            <p>{{ item.answer }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -213,6 +241,61 @@ const testimonials = [
     avatar: "https://i.imgur.com/8vXaE76.png"
   },
 ]
+
+const faq = [
+  [
+    {
+      question: "What kind of websites I can build with Zeus UI?",
+      answer: "This FAQ section is now in the expanded state, so you see how it looks. Rhoncus sed facilisi sed amet. Tristique commodo sodales."
+    },
+    {
+      question: "What makes Zeus UI literally the best Web UI kit in the Internet?",
+      answer: "This FAQ section is now in the expanded state, so you see how it looks. Rhoncus sed facilisi sed amet. Tristique commodo sodales."
+    },
+    {
+      question: "How much does Zeus UI cost?",
+      answer: "This FAQ section is now in the expanded state, so you see how it looks. Rhoncus sed facilisi sed amet. Tristique commodo sodales."
+    },
+    {
+      question: "How long will you support Zeus UI?",
+      answer: "This FAQ section is now in the expanded state, so you see how it looks. Rhoncus sed facilisi sed amet. Tristique commodo sodales."
+    }
+  ],
+  [
+    {
+      question: "Can I use Zeus UI in commercial projects?",
+      answer: "This FAQ section is now in the expanded state, so you see how it looks. Rhoncus sed facilisi sed amet. Tristique commodo sodales."
+    },
+    {
+      question: "Can I resell Zeus UI?",
+      answer: "This FAQ section is now in the expanded state, so you see how it looks. Rhoncus sed facilisi sed amet. Tristique commodo sodales."
+    },
+    {
+      question: "Could you make me a website using Zeus UI?",
+      answer: "This FAQ section is now in the expanded state, so you see how it looks. Rhoncus sed facilisi sed amet. Tristique commodo sodales."
+    },
+    {
+      question: "Is that easy to design a website with Zeus UI?",
+      answer: "This FAQ section is now in the expanded state, so you see how it looks. Rhoncus sed facilisi sed amet. Tristique commodo sodales."
+    }
+  ]
+]
+
+function showAnswer(event) {
+  const element = event.target.parentNode.parentNode.querySelector("p")
+
+  if (element.style.display === "block") {
+    element.style.display = "none"
+    event.target.style.transform = "none"
+  } else {
+    element.style.display = "block"
+    event.target.style.transform = "rotate(180deg)"
+  }
+
+  setTimeout(function () {
+    element.classList.toggle("show")
+  }, 20);
+}
 </script>
 
 <style scoped lang="scss">

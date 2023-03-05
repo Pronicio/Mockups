@@ -422,4 +422,94 @@ main {
       }
     }
   }
+
+  #faq {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0 32px;
+    margin: 8rem 0;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      h2 {
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 4rem;
+        color: #000000;
+        margin: 0;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #532C59;
+      }
+    }
+
+    .faq {
+      display: flex;
+      flex-direction: row;
+
+      .column {
+        display: flex;
+        flex-direction: column;
+
+        .card {
+          display: flex;
+          flex-direction: column;
+
+          width: 412px;
+          border: 1px solid #D6BCFA;
+          border-radius: 15px;
+
+          margin: 12px;
+          padding: 24px;
+
+          p {
+            margin: 12px 0 0 0;
+            display: none;
+            opacity: 0;
+
+            transition: all .3s ease-in-out;
+
+            &.show {
+              opacity: 1;
+            }
+          }
+
+          .view {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            h4 {
+              font-weight: 500;
+              font-size: 1.25rem;
+              line-height: 1.6rem;
+              color: #000000;
+              opacity: 0.8;
+              margin: 0;
+              width: fit-content;
+            }
+
+            .btn {
+              background: url("/assets/Zeus-NFT/icons/angle-down.svg") no-repeat;
+              width: 24px;
+              height: 24px;
+              cursor: pointer;
+
+              transition: all .3s ease-in;
+            }
+          }
+        }
+      }
+    }
+  }
 }
