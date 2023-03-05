@@ -86,6 +86,21 @@
         </div>
       </div>
     </section>
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+      <div class="testimonials">
+        <div class="card" v-for="user in testimonials" :key="user.name">
+          <div class="user">
+            <img :src="user.avatar" alt="User avatar" width="48">
+            <div class="name">
+              <h5>{{ user.name }}</h5>
+              <h6>@{{ user.tag }}</h6>
+            </div>
+          </div>
+          <p>{{ user.comment }}</p>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -140,6 +155,63 @@ const team = [
   { name: "Jane Cooper", status: "COO" },
   { name: "Darrell Steward", status: "CTO" },
   { name: "Dianne Russell", status: "CDO" }
+]
+
+const testimonials = [
+  {
+    name: "Brooklyn Simmons",
+    tag: "brooklynsimmons",
+    comment: "Sit ut diam bibendum dolor. Ullamcorper pharetra nibh eget vitae pulvinar. Placerat sapien, dolor, aenean vivamus in tincidunt et. Mauris dolor vestibulum et lacus a ante orci.",
+    avatar: "https://i.imgur.com/8vXaE76.png"
+  },
+  {
+    name: "Esther Howard",
+    tag: "estherhhoward",
+    comment: "Vitae tellus bibendum nibh integer auctor pretium sed. Sollicitudin tristique euismod elit.",
+    avatar: "https://i.imgur.com/CBPKH92.png"
+  },
+  {
+    name: "Kristin Watson",
+    tag: "KristinWatson",
+    comment: "Lectus dolor fermentum gravida ut sit vel. Enim. Lorem ipsum will never be the same again so purchase Zeus UI now or web trying.",
+    avatar: "https://i.imgur.com/qxqC7ei.png"
+  },
+  {
+    name: "Dianne Russell",
+    tag: "DianneRussell",
+    comment: "Eu luctus tincidunt vulputate praesent interdum proin. Magna gravida at pretium vitae. Viverra.",
+    avatar: "https://i.imgur.com/G73WNyc.png"
+  },
+  {
+    name: "Arlene McCoy",
+    tag: "ArleneMcCoy",
+    comment: "Eu eu eget lorem commodo sagittis enim in viverra. Urna egestas ipsum gravida tempor. Libero, consectetur urna in enim magnis. Est.",
+    avatar: "https://i.imgur.com/xA1EXqz.png"
+  },
+  {
+    name: "Leslie Alexander",
+    tag: "LeslieAlexander",
+    comment: "Varius bibendum quis ipsum sit. Enim ante donec erat neque semper. Consectetur sed imperdiet tortor duis nulla aliquet at integer.",
+    avatar: "https://i.imgur.com/UrHLRbc.png"
+  },
+  {
+    name: "Eleanor Pena",
+    tag: "EleanorPena",
+    comment: "Amet quam velit nisl et et. Fusce ante facilisi vulputate eget aliquet mi sem eu vulputate.",
+    avatar: "https://i.imgur.com/EyKlVFI.png"
+  },
+  {
+    name: "Jane Cooper",
+    tag: "JaneCooper",
+    comment: "Amet aliquam, volutpat nisl, duis sed at. Vehicula proin consectetur risus dictumst nec amet consequat at tempus. Ornare dapibus nunc fames nibh morbi viverra eu sed mattis.",
+    avatar: "https://i.imgur.com/CBPKH92.png"
+  },
+  {
+    name: "Darlene Robertson",
+    tag: "DarleneRobertson",
+    comment: "Imperdiet sed tellus tempor vitae elit a. Arcu a.",
+    avatar: "https://i.imgur.com/8vXaE76.png"
+  },
 ]
 </script>
 

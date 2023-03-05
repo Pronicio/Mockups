@@ -212,7 +212,7 @@ main {
     flex-direction: column;
     align-items: center;
 
-    margin: 4rem 0;
+    margin: 8rem 0;
 
     h2 {
       font-family: 'Syne', sans-serif;
@@ -268,7 +268,7 @@ main {
     flex-direction: column;
     align-items: center;
 
-    margin: 4rem 0;
+    margin: 8rem 0;
 
     h2 {
       font-family: 'Syne', sans-serif;
@@ -329,6 +329,95 @@ main {
           text-align: center;
           color: #532C59;
           margin: 0;
+        }
+      }
+    }
+  }
+
+  #testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 8rem 0;
+
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 4rem;
+
+      text-align: center;
+      color: #000000;
+      margin: 0;
+    }
+
+    .testimonials {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      align-items: flex-start;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        padding: 1.5rem;
+        margin: 1rem;
+        gap: 1.5rem;
+        width: 412px;
+
+        border: 1px solid #D6BCFA;
+        border-radius: 10px;
+
+        .user {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            margin: 8px;
+            border-radius: 80px;
+          }
+
+          .name {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            h5, h6 {
+              margin: 0;
+            }
+
+            h5 {
+              font-weight: 500;
+              font-size: 1rem;
+              line-height: 1.25rem;
+              color: #000000;
+            }
+
+            h6 {
+              font-weight: 400;
+              font-size: 1rem;
+              line-height: 1.5rem;
+              color: #000000;
+              opacity: 0.5;
+            }
+          }
+        }
+
+        p {
+          margin: 0;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          color: #532C59;
         }
       }
     }
