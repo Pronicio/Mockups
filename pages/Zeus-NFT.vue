@@ -142,6 +142,22 @@
       <button>Sell right now</button>
     </section>
   </main>
+  <footer>
+    <div class="links">
+      <nav>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </nav>
+      <div class="logo"></div>
+      <nav>
+        <a href="#">Cookies</a>
+        <a href="#">Refunds</a>
+        <a href="#">License</a>
+      </nav>
+    </div>
+    <div class="divider"></div>
+    <p class="copyright">Copyright 2022 Zeus UI</p>
+  </footer>
 </template>
 
 <script setup>

@@ -597,3 +597,64 @@ main {
     }
   }
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+
+  padding: 80px 70px 0;
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 2rem 0;
+
+    nav {
+      display: flex;
+
+      a {
+        margin-right: 25px;
+        text-decoration: none;
+        color: #000000;
+        opacity: 0.5;
+
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.25rem;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .logo {
+      background: url("/assets/Zeus-NFT/images/logo.svg") no-repeat;
+      width: 151px;
+      height: 40px;
+    }
+  }
+
+  .divider {
+    width: 100%;
+    border: 1px solid #CCD5DF;
+  }
+
+  .copyright {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+
+    color: #000000;
+    opacity: 0.5;
+    margin: 40px 0;
+  }
+}
