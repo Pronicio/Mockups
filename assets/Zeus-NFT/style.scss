@@ -530,6 +530,8 @@ main {
 
     .objects {
       position: absolute;
+      width: 0;
+      height: 0;
 
       img {
         position: relative;
@@ -537,26 +539,26 @@ main {
 
         &#obj1 {
           width: 150px;
-          top: -140px;
-          left: 720px;
+          top: -95px;
+          right: -410px;
         }
 
         &#obj2 {
           width: 90px;
-          top: -165px;
-          right: 325px;
+          top: -190px;
+          right: 500px;
         }
 
         &#obj3 {
           width: 200px;
-          bottom: -80px;
-          left: 410px;
+          bottom: 150px;
+          left: 333px;
         }
 
         &#obj4 {
           width: 180px;
-          bottom: -85px;
-          right: 745px;
+          bottom: 350px;
+          right: 625px;
         }
       }
     }
