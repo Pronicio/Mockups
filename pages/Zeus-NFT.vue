@@ -41,7 +41,7 @@
         rhoncus, tellus, eros consequat magna semper orci a tincidunt. </p>
       <div class="collection">
         <div class="nft" v-for="nft in nfts" :key="nft.name">
-          <img :src="`_nuxt/assets/Zeus-NFT/images/nfts/${nft.name}.png`" :alt="nft.name">
+          <img :src="loadImage(`nfts/${nft.name}.png`)" :alt="nft.name">
           <h4>{{ nft.name }}</h4>
           <p>{{ nft.description }}</p>
         </div>
@@ -53,7 +53,7 @@
         rhoncus, tellus, eros consequat magna semper orci a tincidunt. </p>
       <div class="team">
         <div class="user" v-for="user in team" :key="user.name">
-          <img :src="`_nuxt/assets/Zeus-NFT/images/team/${user.name}.png`" :alt="user.name">
+          <img :src="loadImage(`team/${user.name}.png`)" :alt="user.name">
           <h4>{{ user.name }}</h4>
           <p>{{ user.status }}</p>
         </div>
@@ -323,6 +323,10 @@ function showAnswer(event) {
   setTimeout(function () {
     element.classList.toggle("show")
   }, 20);
+}
+
+function loadImage(path) {
+  return new URL(`../assets/Zeus-NFT/images/${path}`, import.meta.url).href
 }
 </script>
 
