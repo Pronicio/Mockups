@@ -41,7 +41,7 @@
         rhoncus, tellus, eros consequat magna semper orci a tincidunt. </p>
       <div class="collection">
         <div class="nft" v-for="nft in nfts" :key="nft.name">
-          <img :src="loadImage(`nfts/${nft.name}.png`)" :alt="nft.name">
+          <img :src="nft.image" :alt="nft.name">
           <h4>{{ nft.name }}</h4>
           <p>{{ nft.description }}</p>
         </div>
@@ -53,7 +53,7 @@
         rhoncus, tellus, eros consequat magna semper orci a tincidunt. </p>
       <div class="team">
         <div class="user" v-for="user in team" :key="user.name">
-          <img :src="loadImage(`team/${user.name}.png`)" :alt="user.name">
+          <img :src="user.avatar" :alt="user.name">
           <h4>{{ user.name }}</h4>
           <p>{{ user.status }}</p>
         </div>
@@ -170,47 +170,56 @@ useHead({
 const nfts = [
   {
     name: "Moonbirds",
-    description: "Faucibus odio elementum nulla venenatis, libero. Ullamcorper duis fringilla pulvinar nibh diam sit."
+    description: "Faucibus odio elementum nulla venenatis, libero. Ullamcorper duis fringilla pulvinar nibh diam sit.",
+    image: "https://i.imgur.com/TL8jWjo.png"
   },
   {
     name: "Clone X - X Takashi Murakami",
-    description: "Magna in condimentum praesent pretium vitae mattis facilisis nunc. Lectus in ac ac."
+    description: "Magna in condimentum praesent pretium vitae mattis facilisis nunc. Lectus in ac ac.",
+    image: "https://i.imgur.com/HQz1yba.png"
   },
   {
     name: "Mutant Ape Yacht Club",
-    description: "Sit aenean porttitor sit lectus. Adipiscing egestas etiam eget cursus nulla risus euismod. Netus."
+    description: "Sit aenean porttitor sit lectus. Adipiscing egestas etiam eget cursus nulla risus euismod. Netus.",
+    image: "https://i.imgur.com/XD9bmej.png"
   },
   {
     name: "MOAR by Joan Cornella",
-    description: "Faucibus odio elementum nulla venenatis, libero. Ullamcorper duis fringilla pulvinar nibh diam sit."
+    description: "Faucibus odio elementum nulla venenatis, libero. Ullamcorper duis fringilla pulvinar nibh diam sit.",
+    image: "https://i.imgur.com/A8JNoxF.png"
   },
   {
     name: "Doodles",
-    description: "Magna in condimentum praesent pretium vitae mattis facilisis nunc. Lectus in ac ac."
+    description: "Magna in condimentum praesent pretium vitae mattis facilisis nunc. Lectus in ac ac.",
+    image: "https://i.imgur.com/VznEEyB.png"
   },
   {
     name: "KIWAMI Genesis",
-    description: "Sit aenean porttitor sit lectus. Adipiscing egestas etiam eget cursus nulla risus euismod. Netus."
+    description: "Sit aenean porttitor sit lectus. Adipiscing egestas etiam eget cursus nulla risus euismod. Netus.",
+    image: "https://i.imgur.com/Spkl445.png"
   },
   {
     name: "Arcade Land",
-    description: "Faucibus odio elementum nulla venenatis, libero. Ullamcorper duis fringilla pulvinar nibh diam sit."
+    description: "Faucibus odio elementum nulla venenatis, libero. Ullamcorper duis fringilla pulvinar nibh diam sit.",
+    image: "https://i.imgur.com/HnfFRge.png"
   },
   {
     name: "Goons of Balatroon",
-    description: "Magna in condimentum praesent pretium vitae mattis facilisis nunc. Lectus in ac ac."
+    description: "Magna in condimentum praesent pretium vitae mattis facilisis nunc. Lectus in ac ac.",
+    image: "https://i.imgur.com/x6YG2BR.png"
   },
   {
     name: "Meta Toy DragonZ",
-    description: "Sit aenean porttitor sit lectus. Adipiscing egestas etiam eget cursus nulla risus euismod. Netus."
+    description: "Sit aenean porttitor sit lectus. Adipiscing egestas etiam eget cursus nulla risus euismod. Netus.",
+    image: "https://i.imgur.com/fpdlnDA.png"
   }
 ]
 
 const team = [
-  { name: "Guy Hawkins", status: "CEO" },
-  { name: "Jane Cooper", status: "COO" },
-  { name: "Darrell Steward", status: "CTO" },
-  { name: "Dianne Russell", status: "CDO" }
+  { name: "Guy Hawkins", status: "CEO", avatar: "https://i.imgur.com/yzxuiXF.png" },
+  { name: "Jane Cooper", status: "COO", avatar: "https://i.imgur.com/wlhHSzk.png" },
+  { name: "Darrell Steward", status: "CTO", avatar: "https://i.imgur.com/7Uchk6V.png" },
+  { name: "Dianne Russell", status: "CDO", avatar: "https://i.imgur.com/5N4mayB.png" }
 ]
 
 const testimonials = [
@@ -323,10 +332,6 @@ function showAnswer(event) {
   setTimeout(function () {
     element.classList.toggle("show")
   }, 20);
-}
-
-function loadImage(path) {
-  return new URL(`../assets/Zeus-NFT/images/${path}`, import.meta.url).href
 }
 </script>
 
