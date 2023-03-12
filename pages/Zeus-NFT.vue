@@ -1,5 +1,7 @@
 <template>
   <header>
+    <div class="burger-menu-icon"></div>
+    <div class="burger-menu"></div>
     <nav>
       <a href="#">Home</a>
       <a href="#">University</a>
