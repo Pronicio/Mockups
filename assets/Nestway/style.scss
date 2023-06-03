@@ -1,0 +1,230 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #141414;
+  padding: 0 3rem;
+
+  .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p {
+      margin-right: 10px;
+      color: #727272;
+      font-size: 0.875rem;
+    }
+
+    b {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+
+      cursor: pointer;
+      font-size: 0.875rem;
+
+      .arrow-icon {
+        background: url("/assets/Nestway/icons/arrow.svg") no-repeat;
+        width: 18px;
+        height: 18px;
+        margin-left: 3px;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+      font-size: 0.875rem;
+      color: #FFFFFF;
+      text-decoration: none;
+      margin-right: 25px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.page {
+  margin: 0 3rem;
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 1rem 0;
+
+    .left, .right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .logo {
+        background: url("/assets/Nestway/images/logo.svg") no-repeat;
+        width: 151px;
+        height: 80px;
+        margin-right: 2rem;
+      }
+
+      a {
+        color: #FFFFFF;
+        text-decoration: none;
+        margin-right: 15px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .left nav {
+      align-self: flex-start;
+      margin-top: 1.2rem;
+    }
+
+    .right {
+      align-self: flex-start;
+      margin-top: 1.2rem;
+    }
+  }
+
+  main {
+
+    form {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      width: 40vw;
+      margin: 0 auto 2rem;
+      padding: 17px 12px;
+
+      background: #212121;
+      border-radius: 70px;
+
+      input {
+        border: none;
+        outline: none;
+        background: none;
+
+        font-size: 1rem;
+        color: #FFFFFF;
+        width: calc(100% - 10px);
+        text-indent: 10px;
+
+        &::placeholder {
+          color: #FFFFFF;
+        }
+      }
+
+      .icon-container {
+        position: absolute;
+        right: 29.7%;
+        background: #313131;
+        border-radius: 70px;
+        padding: 10px;
+        cursor: pointer;
+
+        .search-icon {
+          background: url("/assets/Nestway/icons/search.svg") no-repeat;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    .main-container {
+      position: relative;
+      border-radius: 30px;
+      height: 100vh;
+      width: 100%;
+
+      &:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+
+        opacity: 0.7;
+        background: #212121 url("/assets/Nestway/images/main-image.jpg") no-repeat center;
+        background-size: cover;
+        border-radius: 30px;
+      }
+
+      .left {
+        position: absolute;
+        bottom: 8%;
+        left: 4%;
+
+        h2 {
+          font-family: 'Podkova', sans-serif;
+          font-size: 1.5rem;
+          margin: 0;
+        }
+
+        h1 {
+          font-weight: 800;
+          font-size: 4.3rem;
+          line-height: 92.5%;
+          letter-spacing: -0.02em;
+          margin-top: 1.5rem;
+        }
+
+        button {
+          background: #FFFFFF;
+          backdrop-filter: blur(45.5px);
+          border: 0;
+          border-radius: 10px;
+
+          font-weight: 700;
+          font-size: 1rem;
+          color: #232323;
+          padding: 14px 28px;
+        }
+      }
+
+      .right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        position: absolute;
+        bottom: 8%;
+        right: 4%;
+
+        background: rgba(217, 217, 217, 0.11);
+        backdrop-filter: blur(12px);
+        border-radius: 82px;
+        padding: 8px;
+
+        .name {
+          margin: 8px;
+
+          h6 {
+            margin: 0;
+            font-size: 1.125rem;
+          }
+
+          p {
+            margin: 0;
+            font-weight: 400;
+            font-size: 1rem;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}
